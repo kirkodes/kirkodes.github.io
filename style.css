@@ -1,7 +1,7 @@
 body {
     font-family: Roboto, sans-serif;
+    margin: 0;
 }
-
 
 .navbar-as-a-whole {
     width: 100%;
@@ -16,11 +16,51 @@ body {
     flex: 1;
 }
 
+#logo-hover:hover {
+    transform: scale(1.15);
+}
+
 .take-me-home-logo {
     position: relative;
     float: left;
     margin-top: 26px;
     z-index: 1;
+}
+
+.all-the-dropdown-navs {
+    position: relative;
+    float: right;
+    margin-top: 18px;
+    color: #fff;
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 90;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 10px 16px;
+}
+
+.premium-no-caret {
+    text-decoration: none;
+    color: white;
+}
+.caret {
+    border: solid white;
+    border-width: 0px 2.75px 2.75px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 2px;
+    transform: rotate(45deg);
 }
 
 .open-kast {
@@ -42,24 +82,6 @@ body {
     line-height: 27px;
 }
 
-/*not so sure about this all-the-dropdowns styling; i removed an irrelevant div and added that styling here... to be inspected when you get back around to the nav bar styling*/
-
-.all-the-dropdown-navs {
-    position: relative;
-    float: right;
-    margin-top: 18px;
-    color: #fff;
-    
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border: 1px none #fff;
-    display: inline-block;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 900;
-}
-
 .top-violet-div {
     background-image:url(https://www.kastapp.co/images/gradient-violet-bg.jpg);
     background-size: cover;
@@ -74,6 +96,7 @@ body {
 }
 
 .laptop-violet-div {
+    padding-top: 100px;
     vertical-align: middle;
 }
 
@@ -86,9 +109,87 @@ body {
     position: relative;
 }
 
+.violet-header {
+    font-size: 48px;
+    margin-top: 10px;
+}
+
+.violet-paragraph {
+    align-content: center;
+    max-width: 550px;
+    margin-left: 150px;
+    font-size: 20px;
+}
+
+.orange-button-link {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+button {
+    background-color: #fe9000;
+    width: 200px;
+    padding: 9px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.white-div-with-featured-logos {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.featured-in-header {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    color: #434146;
+    text-align: center;
+    display: block;
+}
+
+.logo-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.logo-grid-layout {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 50px 40px;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 50px 40px;
+}
+
+.kast-quote {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    color: #434146;
+}
+
+
 
 .footer {
-    bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
     width: 100%;
     background-color: #1b8c88;
     text-align: center;
